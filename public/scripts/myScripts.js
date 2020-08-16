@@ -1,4 +1,4 @@
-$(document).ready(function(){
+/* $(document).ready(function(){
 	var altura = $('header').offset().top;
 	
 	$(window).on('scroll', function(){
@@ -11,8 +11,12 @@ $(document).ready(function(){
 
     $('#clickContacto').on('click', function(){
 		
-			$('header').addClass('fixed-top');
+            $('header').addClass('fixed-top');
+            
 		
-	});
+    });
+    
+    
+    
  
-});
+}); */
