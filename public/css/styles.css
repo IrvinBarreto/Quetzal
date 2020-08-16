@@ -1,0 +1,326 @@
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+  
+  
+}
+
+h2{
+  font-size: 3rem;
+  margin-bottom: 1.2rem;
+}
+h5,h6{
+  margin: 0;
+}
+
+p {
+  line-height: 1.5;
+  /*color: #a4b494;*/
+}
+a i {
+  font-size: 1.2rem;
+  
+}
+a:hover{
+  text-decoration: none;
+}
+ul{
+  list-style-type: none;
+}
+
+/* a i{color: #02be6e;}
+
+a i:hover{ color: #28a745;} */
+
+
+
+
+
+
+
+/*headings*/
+
+.big-heading{
+  font-family: 'Playfair Display', serif;
+  font-size: 6rem;  
+  line-height: 1.5;
+}
+/*Utilidades*/
+
+.bg-light-gray{
+  background-color: #f5f5f5;
+
+}
+
+.colored {
+  background-color: #02be6e;
+
+}
+
+
+
+/*botones*/
+
+.btn-header{
+  margin: 5% 3% 5% 0;
+
+}
+.menu-movil {
+  color: #ffffff;
+}
+
+
+
+
+
+
+/*Navigation Bar*/
+
+
+
+
+.navbar{
+  padding: 0;
+  
+  
+}
+.navbar-brand {
+  
+  font-weight: bold;
+  font-size: 2.5rem;
+}
+.nav-item {
+  padding-right: 0px ;
+}
+
+.nav-link {
+  font-size: 1.2rem;
+  font-weight: 500;
+  
+}
+.navbar a {
+  color: #ffffff;
+  transition: all .15s ease-in-out;
+  
+}
+.navbar a:hover{
+  color: #127681;
+  ;
+}
+/*Remueve la linea del menu de hamburguesa*/
+
+.navbar-toggler:focus{
+  outline: none;
+
+}
+
+
+/* hero */
+
+#hero {
+  
+  padding: 5% 0%;
+  background-image: url("/img/verduras.jpg");  
+  background-size: cover;
+  background-attachment: fixed;
+     
+}
+
+.content-hero::before{
+  content: '';
+  position: absolute;  
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 10%;
+
+}
+
+
+.content-hero h1,h3,p,a,img {
+  position: relative;
+}
+
+.tag-hero {
+  color: #ffffff;
+  margin: 1rem 1rem 1rem 0;
+  padding: .5rem 1rem ;
+  display: inline-block;
+  background-color: #02be6e;
+  border-radius: 1rem;
+  text-decoration: none;
+  transition: all .15s ease-in-out;
+}
+.tag-hero:hover {
+  background-color: #28a745;
+  color: #ffffff;
+  
+}
+
+
+
+/*info*/
+#info {
+  padding: 10% 0 5%;
+  text-align: center;
+}
+#info p {
+  margin-bottom: 5rem;
+}
+.info-details i {
+  font-size: 5rem;
+  padding: 1.2rem 0;
+  color: #02be6e;
+
+}
+.info-details i:hover{
+  color: #28a745;
+}
+
+
+/*Productos*/
+#productos{
+  
+  
+  padding: 5% 0;  
+  text-align: left;
+  -webkit-box-shadow: 0px 1px 10px -2px rgba(0,0,0,0.82);
+  -moz-box-shadow: 0px 1px 10px -2px rgba(0,0,0,0.82);
+  box-shadow: 0px 1px 10px -2px rgba(0,0,0,0.82);
+
+}
+
+
+
+
+
+
+
+/*.productos-container img {
+  -moz-transition: all 0.8s;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+  
+  
+}
+.productos-container:hover img{
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}*/
+
+/*Pricing*/
+
+#pricing {
+  padding: 5% 0;
+}
+
+
+
+
+/*Contacto*/
+
+#contacto {
+  padding: 10% 0 5%;
+  text-align: center;
+}
+.contacto-details{
+  line-height: 3rem;
+}
+.contacto-details h4{
+  margin-bottom: 2rem;
+
+}
+.contacto-details a {
+  text-decoration: none;
+  color: black;
+}
+.icono-facebook{
+  color: rgb(23.14%, 34.9%, 59.61%);
+
+}
+.icono-facebook:hover{
+  color: #2f477a;
+}
+
+
+
+/*Footer*/
+#footer {
+  padding: 1% 0;
+  text-align: center;
+  color: #ffffff;
+}
+#footer ul{
+  margin-bottom: 0;
+
+}
+#footer a {
+  color: #ffffff;
+  transition: all .15s ease-in-out;
+  
+  
+}
+
+#footer a:hover{
+  color: #127681;
+  
+}
+
+/*Nosotros*/
+#nosotros {
+  padding: 5% 0;
+  text-align: justify;
+}
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+
+
+
+
+
+ }
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {  }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) {  }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
