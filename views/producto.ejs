@@ -1,0 +1,42 @@
+<%-include("partials/header") -%>
+
+<section id="singleProduct" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <img class="img-fluid" src="<%= oneProducto.url %> " alt="<%= oneProducto.name %>">
+            </div>
+            <div class="col-12 col-md-6">
+                <h2 class="texto-capitalizado"><%=oneProducto.name %></h2>
+                <h4>Ingredientes</h4>
+                <p><%= oneProducto.ingredients %></p>
+                <h4>Beneficios</h4>
+                <p><%= oneProducto.description %></p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<%-include("partials/pricing") -%>
+
+
+
+<%-include("partials/contacto") -%>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%-include("partials/footer") -%>

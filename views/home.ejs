@@ -74,47 +74,23 @@
             </div>
         </div>
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-            <div class="col mb-4">
-                <div class="card">
-                    <img height="320 h-100" src="/img/lecheAlmendras.jpeg" class="card-img-top" alt="leche-almendras">
-                    <div class="card-body">
-                        <h5 class="card-title">Leche de Almendras</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Beneficios</h6>
-                        <p class="card-text">
-                            Beneficia a las personas con diabetes, debido a que favorece la digestión del almidón estabilizando los niveles de azúcar.                  
-                            
-                        </p> 
+           
+            <%productosDestacados.forEach( producto => {%>
+
+                <div class="col mb-4">
+                    <div class="card h-100">
+                        <img height="320" src="<%= producto.url %>" class="card-img-top" alt="<%= producto.name %>">
+                        <div class="card-body">
+                            <h5 class="card-title"><%= producto.name %></h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Beneficios</h6>
+                            <p class="card-text"><%= producto.description.substring(0,50) + "..." %> <a href="/producto/<%=producto._id  %>">Ver más</a>  </p>
+                        
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card h-100">
-                    <img height="320" src="/img/lecheAlpiste.jpeg" class="card-img-top" alt="leche-alpiste">
-                    <div class="card-body">
-                        <h5 class="card-title">Leche de Alpiste</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Beneficios</h6>
-                        <p class="card-text">
-                            Desinflama órganos internos.
-                            <br>Regula colesterol.<br>
-                            Trigliceridos. <br>
-                            Presión alta o baja.
-                            
-                            
-                    </div>
-                </div>
-            </div>
-            <div class="col mb-4">
-                <div class="card h-100">
-                    <img height="320" src="/img/kids.jpeg" class="card-img-top" alt="kids">
-                    <div class="card-body">
-                        <h5 class="card-title">Kids Malteada</h5>
-                        <h6 class="card-subtitle mb-2 text-muted">Beneficios</h6>
-                        <p class="card-text">Malteada especialmente para niños de 3 a 12 años. <br>
-                            Ayuda en el tratamiento de asma, cistitis, faringitis e indigestión.
-                        </p>
-                    </div>
-                </div>
-            </div>
+
+            <%})%>
+
            
            
         </div>

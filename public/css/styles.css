@@ -62,6 +62,9 @@ a i:hover{ color: #28a745;} */
   background-color: #02be6e;
 
 }
+.texto-capitalizado {
+  text-transform: capitalize;
+}
 
 
 
@@ -280,6 +283,16 @@ a i:hover{ color: #28a745;} */
 #nosotros {
   padding: 5% 0;
   text-align: justify;
+}
+
+/* estilos para la pagina de productos sencillos*/
+
+#singleProduct{
+  padding: 5% 0 ;
+  
+}
+#singleProduct p {
+  line-height: 1.8;
 }
 
 
